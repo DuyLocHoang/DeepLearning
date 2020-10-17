@@ -1,0 +1,15 @@
+import numpy as np
+
+X = np.array([4,4])
+print(X)
+
+# Norm : Chuan hoa de tinh ra 1 dai luong bieu dien do lon cua 1 vecto
+# L0 Norm : Tong So luong cac phan tu khac 0 trong X
+# L1 Norm : Khoang cach Mahhantan |x1 + x2|
+# L2 Norm : Khoang cach Euclide sqrt( x1 **2 + x2**2)
+l0_norm = np.linalg.norm(X,ord = 0)
+l1_norm = np.linalg.norm(X,ord = 1)
+l2_norm = np.linalg.norm(X,ord = 2)
+a = np.sqrt(X[0]**2 + X[1]**2)
+print(l2_norm)
+print(a)
